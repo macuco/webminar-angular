@@ -1,11 +1,11 @@
 
-<p>{{title}}</p>
-<p><input [(ngModel)]="title"></p>
+<p>{{producto.title}}</p>
+<p><input [(ngModel)]="producto.title"></p>
 <br/>
 <button (click)="eventoBoton()">Aceptar</button>
 <br/>
 
-<p *ngIf="productoActivo">Esta es la descripcion del producto</p>
+<p *ngIf="productoActivo">{{producto.descripcion}}</p>
 
 
 <ul>

@@ -12,6 +12,15 @@ export class AppComponent {
   productoActivo:boolean = true;
   productos:string[] = ["producto 1", "producto2", "producto3"]
 
+  producto:Producto = {
+    title:"Zapato",
+    precio1:220.50,
+    precio2:550.00,
+    descripcion:" Descripcion de los zapatos",
+    productoActivo:true,
+    productos:[]
+  };
+
   sumarProductos(){
     return this.precio1+this.precio2;
   }
@@ -28,5 +37,6 @@ class Producto {
   precio2:number = 0
   productoActivo:boolean = false;
   productos:string[] = []
+  descripcion = "";
 }
 
