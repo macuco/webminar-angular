@@ -47,6 +47,6 @@
 {"id":47,"precio":219.49,"codigo":"0591-3223","cantidad":485,"nombre":"Wine - Chateau Bonnet","descripcion":"Computer Communications Equipment","activo":false},
 {"id":48,"precio":745.56,"codigo":"64058-147","cantidad":649,"nombre":"Wine - Red, Mouton Cadet","descripcion":"Transportation Services","activo":true},
 {"id":49,"precio":166.46,"codigo":"0186-0324","cantidad":409,"nombre":"Laundry - Bag Cloth","descripcion":"Medical/Dental Instruments","activo":true},
-{"id":50,"precio":45.38,"codigo":"11701-048","cantidad":556,"nombre":"Shrimp - 16/20, Iqf, Shell On","descripcion":"Electric Utilities: Central","activo":false},
+{"id":50,"precio":45.38,"codigo":"11701-048","cantidad":556,"nombre":"Shrimp - 16/20, Iqf, Shell On","descripcion":"Electric Utilities: Central","activo":false}
 ]
 }
