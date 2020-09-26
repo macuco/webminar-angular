@@ -39,6 +39,6 @@ class Producto {
   cantidad:number;
   nombre:string;
   descripcion:string;
-  productoActivo:boolean = false;
+  activo:boolean = false;
 }
 
