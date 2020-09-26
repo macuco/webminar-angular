@@ -6,37 +6,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'webminar-angular';
-  precio1:number = 50.50
-  precio2:number = 30.25
-  productoActivo:boolean = true;
-  productos:string[] = ["producto 1", "producto2", "producto3"]
+  modificando:boolean = false;
+  productoActivo:Producto;
+  productos:Producto[]=[]
 
-  producto:Producto = {
-    title:"Zapato",
-    precio1:220.50,
-    precio2:550.00,
-    descripcion:" Descripcion de los zapatos",
-    productoActivo:true,
-    productos:[]
-  };
+  productoActual:Producto = new Producto();
 
-  sumarProductos(){
-    return this.precio1+this.precio2;
+
+  registrarProducto(){
+    if(!this.modificando){
+      this.productos.push(this.productoActual);
+    }
+    this.modificando = false;
+    this.productoActual = new Producto();
   }
 
-  eventoBoton(){
-    this.productoActivo = !this.productoActivo;
+  modificarProducto(producto:Producto){
+    this.modificando = true;
+    this.productoActual = producto;
+  }
+
+  eliminarProducto(indice:number){
+    this.productos.splice(indice,1);
   }
 }
 
 
 class Producto {
-  title:string = '';
-  precio1:number = 0
-  precio2:number = 0
+  id:number = 0;
+  precio:number = 0;
+  codigo:string
+  cantidad:number;
+  nombre:string;
+  descripcion:string;
   productoActivo:boolean = false;
-  productos:string[] = []
-  descripcion = "";
 }
 
