@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { DadoComponent } from './dado/dado.component';
+import { CubileteComponent } from './cubilete/cubilete.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DadoComponent,
+    CubileteComponent
   ],
   imports: [
     BrowserModule,

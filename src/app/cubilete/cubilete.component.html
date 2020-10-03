@@ -1,0 +1,11 @@
+<app-dado #dado1></app-dado>
+<app-dado #dado2></app-dado>
+<app-dado #dado3></app-dado>
+<br/>
+<button (click)="dado1.cambiaNumero();dado2.cambiaNumero();dado3.cambiaNumero();">LANZAR</button>
+<div *ngIf="dado1.numero==dado2.numero && dado1.numero==dado2.numero && dado1.numero==dado3.numero && dado2.numero==dado3.numero">
+  ¡¡¡ FELICIDADES HAS GANADO !!!
+</div>
+<div  *ngIf="!(dado1.numero==dado2.numero && dado1.numero==dado2.numero && dado1.numero==dado3.numero && dado2.numero==dado3.numero)">
+ :( Intentalo nuevamente
+</div>
