@@ -1,9 +1,22 @@
 
 
 APP COMPONENT
-<br/>
-<br/>
-<app-cubilete></app-cubilete>
+<ul>
+  <li>
+    <a routerLink="home">home</a>
+  </li>
+  <li>
+    <a [routerLink]="'lista'">Lista</a>
+  </li>
+  <li>
+    <a [routerLink]="'pagina3'">Pagina 3</a>
+  </li>
+  <li>
+    <a routerLink="cubilete">Cubilete</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+
 
 
 

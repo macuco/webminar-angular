@@ -1,8 +1,10 @@
-<app-dado #dado1></app-dado>
-<app-dado #dado2></app-dado>
-<app-dado #dado3></app-dado>
+<app-dado #dado1 [(numero)]="numero1"></app-dado>
+<app-dado #dado2 [(numero)]="numero2"></app-dado>
+<app-dado #dado3 [(numero)]="numero3"></app-dado>
 <br/>
-<button (click)="dado1.cambiaNumero();dado2.cambiaNumero();dado3.cambiaNumero();">LANZAR</button>
+
+<button (click)="dado1.cambiaNumero();dado2.cambiaNumero();dado3.cambiaNumero();numero1=dado1.numero;numero2=dado2.numero;numero3=dado3.numero;guardarDatos()">LANZAR</button>
+{{numero1}}{{numero2}}{{numero3}}
 <div *ngIf="dado1.numero==dado2.numero && dado1.numero==dado2.numero && dado1.numero==dado3.numero && dado2.numero==dado3.numero">
   ¡¡¡ FELICIDADES HAS GANADO !!!
 </div>

@@ -1,0 +1,7 @@
+<p>pagina1 works!</p>
+
+<table>
+  <tr *ngFor="let producto of productos">
+    <td (click)="cargarDetalle(producto.id)">{{producto.id}}</td><td>{{producto.nombre}}</td><td>{{producto.descripcion}}</td>
+  </tr>
+</table>
